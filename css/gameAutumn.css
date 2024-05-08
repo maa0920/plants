@@ -1,0 +1,128 @@
+/* CSS Document */
+@font-face{
+    src:url("arcade.TTF");
+    font-family: duck;
+}
+html, body { 
+	margin: 0 auto;
+	font-family: "Lucida Console", "Courier New";
+	font-size: 13px;
+	background-image: url("../images/autumnPlantBackground.jpg");
+	background-repeat: no-repeat;
+	background-color: #3f6347;
+	color: white;
+	background-size: cover;
+	height: 100%;
+}
+h1 {
+	margin: 2px;
+	text-align: center;
+    font-family: duck;
+    font-size: 40px;
+    text-shadow: 3px 3px #946318;
+    color: #fae761;
+  
+}
+h2 {
+	margin: 6px;
+	text-align: center;
+}
+
+button {
+    padding: 8px;
+   }
+   
+#wrapper {
+	height: 100%;
+}             
+#content {
+	padding: 20px;
+	display: flex;
+    flex-wrap: wrap;
+	background-color: #023f26;
+	width: 50%; 
+	margin: auto;
+	height: 100%;
+}
+
+#seca{
+    display: flex;
+}
+
+#score{
+    margin: 2px;
+    flex:1;
+    text-align: right;
+    color: white;
+    text-shadow: 2px 2px #946318;
+    font-size: 18px
+}
+#countdown {
+    margin: 2px;
+	flex:1;
+    text-align:left;
+    display:none;
+    color: white;
+    text-shadow: 2px 2px #946318;
+    font-size: 18px
+}
+
+div#gamespace img {position:absolute;}
+div#gamespace {position: relative;}
+
+#gamespace {
+	margin: 20px;
+	height: 500px;
+    width: 900px;
+	background-color: #3f6347;
+	border: 2px solid #CCC; 
+	margin: auto;
+    cursor: url(../images/cursor.jpg), auto;
+
+}
+.target {
+	width: 120px;
+}
+
+.col1 {
+    text-align:center;
+    width: 550px;
+    min-width: 400px;
+	margin: auto;
+}
+
+
+@media only screen and (max-width: 900px){
+    #content {
+        display: inline-block;
+    }
+    .col1 {
+        margin:0 auto;
+    }
+}
+nav {
+    height: 20px;
+    padding: 10px;
+    background-color: #000;
+    padding: .5em;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    display: flex; /* Adding flex display */
+    justify-content: center; /* Centering the content horizontally */
+    align-items: center; /* Centering the content vertically */
+}
+nav ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+nav li {
+    display: inline; /* Keep the list items inline */
+    padding-right: 15px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+}
